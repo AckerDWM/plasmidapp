@@ -1,0 +1,39 @@
+{
+  "name": "plasmidapp",
+  "version": "1.0.0",
+  "description": "Website for Plasmid iOS app.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alizaybak/plasmidapp.git"
+  },
+  "keywords": [
+    "plasmid",
+    "app",
+    "ios",
+    "dna",
+    "vector",
+    "molecular",
+    "cloning",
+    "biology"
+  ],
+  "author": "Daniel Acker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Alizaybak/plasmidapp/issues"
+  },
+  "homepage": "https://github.com/Alizaybak/plasmidapp#readme",
+  "dependencies": {
+    "fs": "0.0.2",
+    "http": "0.0.0",
+    "mime": "^1.3.4",
+    "path": "^0.12.7"
+  },
+  "engines": {
+    "node": "0.12.7"
+  }
+}
