@@ -2,267 +2,83 @@
 <html>
   <head>
     
-    <title>Plasmid App</title>
+    <title>Plasmid</title>
     <script src="http://leaverou.github.com/prefixfree/prefixfree.min.js"></script>
     <style>
-      body
+      body 
 {
-	margin: 0;
-	font-family: sans-serif;
+	background-color: black;
+	margin-top: 50px;
+	font-family:  'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-#background
+#mainContainer
 {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	opacity: 0.5;
-	background-image: url("https://lh3.googleusercontent.com/M_kXrBmVunmIgfteiOl8K55MZXf471fiR8SdwmMKEqLqvu6saUyYZ5491-_gFd1XfZC0fFN9_RQ3yk_NslQ7OZQWjNlmYTqnEpxqtrEs6fsu9geekM_2WZfD36_kqq9LZi0VvE5Fek8YCD-GveW3Yn_XOZGOedGqznahdfGnzoTfJFfbnm0j4JSVF4vnaXnvfKmG3Hyc7D3y-p_Wv6xyNwSJyoxUJ0kZCraToHw0Dsjo6eWGplAF7IKkSA1Jizg7-6muBBkP9Y_CPq97O_0w9ofW6E9qmxnXCTHEAIhO1BcoRSljeIix6LqMPTUSBn7mJ7tI0YnMFKMlZdmr210dgTM2VJ3i9N5oR3TqaXz_SSnBhFkUMyCsdiMxOgQnJaKgRFLAm-ALevYn9K9JBDc5oONpsSBz8X_lZhL3_YeS1m1hYo15TKX1STw2pFSArhjAn6y4mS_xtEVUzz7sS14S84dCRWfnaMgmLKJg1MHtPINOj3BGaeEvZW4xKIM557eNsn8KzZubUAjk9U5N9EGeJ5nM-KEyqRV8h-IYg2DWJ80=s1126-no");
+	left: 50px;
 }
 
 h1
 {
-	position: relative;
-	top: 0;
-	left: 200px;
-	font-family: sans-serif;
-	font-size: 100px;
-	margin-top: 0;
-	margin-bottom: 0;
+	position: absolute;
+	color: white;
+	margin-left: 200px;
+	top: 400px;
+	font-size: 50px;
 }
 
 #icon
 {
-	z-index: 1;
 	position: absolute;
-	height: 100px;
-	width: 80px;
-	background-image: url("https://lh3.googleusercontent.com/-B1eGnK6F6lfhLNGQpbB8DRjMUZMKoRxPIhVeapSP64yDNMnhAzOHwiA0FSjE4B_oZKnBNjV2G27terVkfkYu9m0oZZvtGVDS6YipotU_E-5Rm2lXEOnyexxF6FWBbA6xr5f5TjSGdF_uuIASCtnU4fli45yDK_Nz3rVm454_GyzNIGTJUZOKW43_U6n9Hfh5bXEaZINidL8FlpTym3qWOxhxZDvFHbIanNqBuV7oFHnuLTe7LtOdjEv_wGPIc5zJUz6Z7WvqIqUsKnSnxy582eSo6AC473W_c_qjVNB6YQJE48rQ7Betocf3ncQfD2fuUGEQn8Z7FqlNWEY6uTO1rsNeru2GyC8KsLsCXXf2qKwUTSeeBkapdKTrHkunWcKFtl1-w5-57zpzLZmiXSLAQl2TkSj9uUsuYBxbvUfQAQaBLJBlPbWJfx0QcYp_WQWWzy7HBiTT9f5J0m5rCtoPqcZm5kINpFvH1aIAwlQ81UVku7CrFmPqlnaQUnJueFlqINcKMlSMHrABCBGAT6_139JnfuKEqcu1_dRu27v88M=s100-no");
+	height: 500px;
+	left: 100px;
 }
 
-h2
-{
-	font-family: sans-serif;
-}
-
-#navBar
+button
 {
 	position: absolute;
-  	top: 0;
-	height: 920px;
-	width: 200px;
-	font-size: 20px;
-	background-color: #5B5B5B;
-	opacity: 0.5;
-}
-
-#navBar td
-{
-	user-select: none;
-	width: 160px;
+	left: 500px;
 	padding: 10px 20px 10px 20px;
-	font-family: sans-serif;
+	font-size: 30px;
+	border-radius: 50px;
+	background-color: black;
+	color: white;
+	border-width: 0;
+	border-color: white;
+}
+
+button:focus
+{
+	outline: none;
 	font-weight: bold;
 }
 
-#navBar td:hover
+#purchase
 {
-	background-color: #D3D3D3;
+	margin-top: 100px;
 }
 
-#navBar table
+#learnMore
 {
-	padding-top: 100px;
-}
-
-#main
-{
-	position: absolute;
-	left: 200px;
-	padding: 20px;
-	margin-top: 0;
-	font-size: 20px;
-	z-index: 1;
-}
-
-#main li
-{
-	font-weight: bold;	
-}
-
-#manage
-{
-	color: red;
-}
-
-#annotate
-{
-	color: blue;
-}
-
-#display
-{
-	color: orange;
-}
-
-#screenShotBar
-{
-	position: absolute;
-	top: 10px;
-	width: 300px;
-	right: 0;
-	z-index: 0;
-}
-
-#screenShotBar #one
-{
-	position: relative;
-	width: 300px;
-	height:200px;
-	background-size: 100% 100%;
-	background-image: url("https://lh3.googleusercontent.com/nKsjBGC7BwcV3WtzVtl7wZxI294WL7pAyrfhgDT-w0pFAyFQV9GKg04a0hyih-WnXBXm-wzb_V5mBwmBTMmTdfto4xsua7mQ0pTDw-X4UZBveZO1WfEFPhxskA1HbFkJ0CIrM1OrLTaNykwqfhS7J34W9abCK_S8IC0feOOa68dxi5xBlqtZM62FnS0-k_Rc9E7ZHqnEEtN1SaWFn4HwWj9itvO8W59p9HWLTCHI3eo7r-OMnHzXVEhFGRET57o5ajNiFuNAe_9frMc_rqh9PNL9wOfFaKJrMz9zYiv598VxDe7r8-WP3kUJxBzUwCjqoA0mD9iXH8TtQRCrqpYXLvjq2jM1NL1pr1iV2FqA94bPD_fnR__qp1CXFoCOG5xfR1h-6ikLPgLUABJKV4iopgDVE4P-tFz8Pwel1-2x9jesaCSm6TGPI_ln8FZIvsHaMfJY1rNtqLxlCpbfAH1hND3Vk2O9xqIMZH1G5_kyy-LeMN3f49M26wBojaHTnux0bW_1ftpOBfmK35kZtxUZzoaeDM1i7WORHbfytqviO5c=w960-h640-no")
-}
-
-#screenShotBar #two
-{
-	position: absolute;
-	right: 0;
-	top: 250px;
-	width: 200px;
-	height: 300px;
-	background-size: 100% 100%;
-	background-image: url("https://lh3.googleusercontent.com/YhHBesdwDHUI0UaUKGmefhYbCk_pOLs5jqkF_kMRgIIBt-XRckpbMDItYJhciSdkJk2gMp_krM2YmhcS_X1uFXrhz-oWQ6UzB4CFINfjCWv0AyxYkqjdwQkK0AByqXC81ZwBvj4dHnI3zTr9NrxbZ2muq_VxgdhKy0u6WFCPquxpFMNll-ZLHdYz_zhErmbc2A2l_CKHFRIqH1arZ0iHL5KmarBquk247z9oEfKXUa8--zGO6Kc-UD3qBW31UGcrQnOBjvFpO6LWPKuXtViXt1aCK3exkQfoT7DGeoKhoR0odlUKNEbkoofbVLQ8oaxTp-QazwQoSkBM3xbSlfSVddUhflJxZ62vDqDHFEk2fBFBj9bw3Ou0Qa1Fx3rxgSIhjIwdqeKOiCxmO0T4jb2j1EAfmuZWig79ufCnKrciR-6cx4e2o1AgV3w9ZVAwkQLK9W7fehOhw-yg2-RpLMBDTqyeeXF1JjuRDfDWhwcpBYEBcceMLTqG1lE_W9-gheZ277dh1DIqxgzsxOGS5dwoswzVIgxKvAp-d84cxsS9xCw=w640-h960-no")
-}
-
-#screenShotBar #three
-{
-	position: absolute;
-	right: 0;
-	width: 200px;
-	height:300px;
-	top: 600px;
-	background-size: 100% 100%;
-	background-image: url("https://lh3.googleusercontent.com/8CLVm95j2cpfoADUZRMzomTvrNd_uM51iMURlCIv-KYYLn62Ig1zSeWkU48VwkXbs98y6bUAUnRCTlhIJymznKNW-tFwd2rANaPWhLtr67lS93m_uHCv11prNPZmbrex3oivng7iQhsFjAoGm7AdynU9Pk38yzhBcHpn5oEPIytspu25VZEhzDDGfwe1jspOxzjd9_TaNnu9IoflLhYToItZGy32obqKe6yKTC45yzNqIhFQdXcDtocrmISis5391qhiWbTCltJVOMzqwf2TUT5KnQP6FoL4pb_AOruNIepuDbTmmKir2JRcs_yV6QF-Y79SgsBAqjypNctscqQ4KQ6dNSglRD7TlHrYj2Y_fVbawpko4Tg5DdnX5aQV-FrSxnNM6ddu8NuOHNLAj2irH4kyaCxd_qUpMmtqfyR8eBqcxqLBLNVAOYk0pN1OIFl0F4MEg5-BUa_2kSJlbruh5mjROJxbw75hTur50Lgbr7Ad7S6BW1LEp_H5u6dsJVWp6BMFZ-1GGiP5xZWZiViORCxnH5ruY70GrBEoK6R5ANk=w640-h960-no")
+	margin-top: 200px;
 }
     </style>
   </head>
   <body>
-    <div id="icon"></div>
-<h1>
-	Plasmid
-</h1>
-<div id="background"></div>
-<div id="navBar">
-	<table>
-		<tr>
-			<td id="aboutBtn">About</td>
-		</tr>
-		<tr>
-			<td id="FAQBtn">FAQ</td>
-		</tr>
-		<tr>
-			<td id="contactBtn">Contact</td>
-		</tr>
-	</table>
-</div>
-<div id="main">
-	<div id="manage">
-		<h2>
-			Manage
-		</h2>
-		<ul>
-			<li>Your sequences, always with you</li>
-			<li>Easily transfer files between your iDevice and computer</li>
-			<li>Generate standardized Genbank files</li>
-		</ul>
-	</div>
-	<div id="annotate">
-		<h2>
-			Annotate
-		</h2>
-		<ul>
-			<li>Simple select and annotate</li>
-			<li>Customize keys, colors, and labels</li>
-			<li>Automatically scan for common features</li>
-		</ul>
-	</div>
-	<div id="display">
-		<h2>
-			Display
-		</h2>
-		<ul>
-			<li>Circular plots with highlighted features</li>
-			<li>Touch to select</li>	
-		</ul>
-	</div>
-	<div id="comingSoon">
-		<h2>
-			Comming Soon
-		</h2>
-		<ul>
-			<li>Improved feature detection
-				<ul>
-					<li>User library to scan for features you've previously defined</li>
-					<li>Public library sharing</li>
-				</ul>
-			</li>
-			<li>Public sequence file sharing</li>
-			<li>More cloning tools</li>
-			<li>Desktop companion app</li>
-			<li>Open source</li>
-				<ul>
-					<li>BioSwift libary for biological sequence manipulation in the Swift programming language</li>
-					<li>Open public contribution</li>
-				</ul>
-		</ul>
-	</div>
-</div>
-<div id="screenShotBar">
-	<table>
-		<tr>
-			<td id="one"></td>
-		</tr>
-		<tr>
-			<td id="two"></td>
-		</tr>
-		<tr>
-			<td id="three"></td>
-		</tr>
-	</table>
+    <div id="mainContainer">
+	<h1>
+	DNA annotation for iOS
+	</h1>
+	<img id="icon" src="https://lh3.googleusercontent.com/OmMSWHiGmY-bVTYRZepdX6tG6XVfFrgHYXbfjQ2b_mBUITW8yFEYSI17w46iHOWlj7NEw04RDgBoQb5G6VlM5Pyu6Cl8RzdqRyRuYQR8mTgq9wboQQU7cixiSKNQZ16OPwJjAetuFl7NYvnrwRUj1n7zSXhy5iP0er6PtUqxCSBht8rsfQQYreFW54NRDirZFY6JctzIqItIZafB35ZMVJp-5Pw8KxHLnmkR3pUKY9gnZtgt2XHnkJqU0I7plyN4SfPZZKEhmKDuMbPj-Mborz92-XUsvpvJsB_-BBJOJ_s_x_vI0k1ikYcwmEog4KPmjpNJ-8PLqEIJ3pBNxGmc3f5lI0OzVFbPftfGi6-HYY3fN3G26FJPa1u-Uuj1-aik-PvoNUsFR8eaOsuhSInMdO47TmW_yZD2MheyOhuaVtYtBik5RXD47Iz7xa73hhhR90wReSJjG14UJGEfhHyH2KPbe_WtO0NsJcP2FRyy9YCK5Mz0T8X4nzgPZjWQj9Z78iH7NBrC4vC6AdSSWj1BuGsJ-TF8hKTcAOxbUic2OfQ=w784-h1120-no"/>
+	<button id="purchase">
+		Available soon
+	</button>
+	<button id="learnMore">
+		Learn more...
+	</button>
 </div>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script type="text/javascript">
-      // navigation functions
-function navigateAbout()
-{
-	mainArea.html(aboutHtml);
-}
-
-function navigateFAQ()
-{
-	html = "<h2>Coming soon...</h2>";
-	mainArea.html(html);
-}
-
-function navigateContact()
-{
-	html = "<h2>Contact us at: </h2><p>plasmidapp@gmail.com</p>";
-	mainArea.html(html);
-}
-
-// html objects
-aboutBtn = $("#aboutBtn");
-FAQBtn = $("#FAQBtn");
-contactBtn = $("#contactBtn");
-mainArea = $("#main");
-
-// navigation bar handlers
-aboutBtn.click(navigateAbout);
-FAQBtn.click(navigateFAQ);
-contactBtn.click(navigateContact);
-
-// initial html of 'About' section
-aboutHtml = mainArea.html();
+      
     </script>
   </body>
 </html>
