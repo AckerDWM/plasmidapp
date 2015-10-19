@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -5,80 +6,280 @@
     <title>Plasmid</title>
     <script src="http://leaverou.github.com/prefixfree/prefixfree.min.js"></script>
     <style>
-      body 
-{
-	background-color: black;
-	margin-top: 50px;
-	font-family:  'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-#mainContainer
-{
-	left: 50px;
-}
-
-h1
-{
-	position: absolute;
-	color: white;
-	margin-left: 200px;
-	top: 400px;
-	font-size: 50px;
-}
-
-#icon
-{
-	position: absolute;
-	height: 500px;
-	left: 100px;
-}
-
-button
-{
-	position: absolute;
-	left: 500px;
-	padding: 10px 20px 10px 20px;
-	font-size: 30px;
-	border-radius: 50px;
-	background-color: black;
-	color: white;
-	border-width: 0;
-	border-color: white;
-}
-
-button:focus
-{
-	outline: none;
-	font-weight: bold;
-}
-
-#purchase
-{
-	margin-top: 100px;
-}
-
-#learnMore
-{
-	margin-top: 200px;
-}
+      body
+      {
+        background-color: white;
+        margin-top: 50px;
+        font-family:  'Helvetica Neue', Helvetica, Arial, sans-serif;
+      }
+    
+    #mainContainer
+    {
+      left: 50px;
+      margin-top: 0;
+    }
+    
+    #plasmid
+    {
+      position: absolute;
+      margin-left: 175px;
+      margin-top: 130px;
+      font-size: 50px;
+    }
+    
+    #salesLine
+    {
+      position: absolute;
+      margin-left: 200px;
+      top: 450px;
+      font-size: 50px;
+    }
+    
+    #icon
+    {
+      position: absolute;
+      height: 500px;
+      left: 100px;
+    }
+    
+    .salesPageBtn
+    {
+      position: absolute;
+      margin-left: 550px;
+      padding: 10px 20px 10px 20px;
+      font-size: 30px;
+      border-radius: 50px;
+      background-color: black;
+      color: white;
+      border-width: 0;
+      border-color: white;
+    }
+    
+    #backBtn
+    {
+      font-size: 30px;
+      color: blue;
+      border-width: 0;
+      border-color: white;
+      background-color: white;
+    }
+    
+    button:focus
+    {
+      outline: none;
+      font-weight: bold;
+    }
+    
+    #purchase
+    {
+      margin-top: 100px;
+      width: 270px;
+    }
+    
+    #learnMore
+    {
+      margin-top: 200px;
+      width: 270px;
+    }
     </style>
   </head>
   <body>
     <div id="mainContainer">
-	<h1>
-	DNA annotation for iOS
-	</h1>
-	<img id="icon" src="https://lh3.googleusercontent.com/OmMSWHiGmY-bVTYRZepdX6tG6XVfFrgHYXbfjQ2b_mBUITW8yFEYSI17w46iHOWlj7NEw04RDgBoQb5G6VlM5Pyu6Cl8RzdqRyRuYQR8mTgq9wboQQU7cixiSKNQZ16OPwJjAetuFl7NYvnrwRUj1n7zSXhy5iP0er6PtUqxCSBht8rsfQQYreFW54NRDirZFY6JctzIqItIZafB35ZMVJp-5Pw8KxHLnmkR3pUKY9gnZtgt2XHnkJqU0I7plyN4SfPZZKEhmKDuMbPj-Mborz92-XUsvpvJsB_-BBJOJ_s_x_vI0k1ikYcwmEog4KPmjpNJ-8PLqEIJ3pBNxGmc3f5lI0OzVFbPftfGi6-HYY3fN3G26FJPa1u-Uuj1-aik-PvoNUsFR8eaOsuhSInMdO47TmW_yZD2MheyOhuaVtYtBik5RXD47Iz7xa73hhhR90wReSJjG14UJGEfhHyH2KPbe_WtO0NsJcP2FRyy9YCK5Mz0T8X4nzgPZjWQj9Z78iH7NBrC4vC6AdSSWj1BuGsJ-TF8hKTcAOxbUic2OfQ=w784-h1120-no"/>
-	<button id="purchase">
-		Available soon
-	</button>
-	<button id="learnMore">
-		Learn more...
-	</button>
-</div>
+      <h2 id="salesLine">
+        DNA annotation for iOS
+      </h2>
+      <h2 id="plasmid">
+        Plasmid
+      </h2>
+      <img id="icon" src="https://lh3.googleusercontent.com/OmMSWHiGmY-bVTYRZepdX6tG6XVfFrgHYXbfjQ2b_mBUITW8yFEYSI17w46iHOWlj7NEw04RDgBoQb5G6VlM5Pyu6Cl8RzdqRyRuYQR8mTgq9wboQQU7cixiSKNQZ16OPwJjAetuFl7NYvnrwRUj1n7zSXhy5iP0er6PtUqxCSBht8rsfQQYreFW54NRDirZFY6JctzIqItIZafB35ZMVJp-5Pw8KxHLnmkR3pUKY9gnZtgt2XHnkJqU0I7plyN4SfPZZKEhmKDuMbPj-Mborz92-XUsvpvJsB_-BBJOJ_s_x_vI0k1ikYcwmEog4KPmjpNJ-8PLqEIJ3pBNxGmc3f5lI0OzVFbPftfGi6-HYY3fN3G26FJPa1u-Uuj1-aik-PvoNUsFR8eaOsuhSInMdO47TmW_yZD2MheyOhuaVtYtBik5RXD47Iz7xa73hhhR90wReSJjG14UJGEfhHyH2KPbe_WtO0NsJcP2FRyy9YCK5Mz0T8X4nzgPZjWQj9Z78iH7NBrC4vC6AdSSWj1BuGsJ-TF8hKTcAOxbUic2OfQ=w784-h1120-no"/>
+      <button id="purchase" class="salesPageBtn">
+        Available soon
+      </button>
+      <button id="learnMore" class="salesPageBtn">
+        Learn more...
+      </button>
+    </div>
+    
+    <div id="instructions">
+      <button id="backBtn">
+        Go back
+      </button>
+      <h1>
+        Getting started
+      </h1>
+      <ul>
+        <li><a href="#Importing">Importing sequence files</a></li>
+        <li><a href="#Annotations">Adding and modifying annotations</a></li>
+        <li><a href="#Scanning">Feature scanning</a></li>
+        <li><a href="#Inspecting">Inspecting sequences and mapping features</a></li>
+      </ul>
+      
+      <br/>
+      <a name="Importing">
+        <h2>
+          Importing sequence files
+        </h2>
+      </a><p>
+      The primary advantage to using Plasmid is the ability to access your sequences any time. Using Dropbox, you can easily import and export files, keeping your work consistent between your iPhone and pc.
+      </p>
+      <p>
+      Plasmid uses Genbank formatted sequence files. We like Genbank because it provides a high level of detail about a sequence, and the files can be read and understood easily by human readers. An example file can be found <a href="https://drive.google.com/file/d/0B4J2UdNO_j-QdHVpN2FuMkJEMHc/view?usp=sharing">here</a>.
+      </p>
+      <ol>
+        <li>Open the app on you iDevice</li>
+        <li>Navigate to the file page by selecting the folder icon</li>
+        <li>Select "Link Dropbox" and enter your Dropbox account information</li>
+        <ul>
+          <li>A folder "Apps/Plasmid" will automatically be created in your Dropbox</li>
+        </ul>
+        <li>Drag files into this folder to add them to Plasmid</li>
+        <ul>
+          <li>Sequence files can be imported in either Genbank or Fasta format format, but Genbank format is prefered</li>
+          <ul>
+            <li>Genbank files must use the extension "gb"</li>
+            <li>Fasta files must use the extension "fasta"</li>
+          </ul>
+        </ul>
+        <li>Select files from the files menu to view them in the app</li>
+      </ol>
+      
+      <br/>
+      <a name="Annotations">
+        <h2>
+          Adding and modifying annotations
+        </h2>
+        <h3>
+          Adding an annotation
+        </h3>
+      </a><ol>
+        <li>Using two fingers, select a section of the sequence that you would like to annotate</li>
+        <li>Selected the "ooo" button</li>
+        <li>In the menu that appears, select "Annotate"</li>
+        <ul>
+          <li>The annotate page will open. Here you can set a new feature's Genbank key, label, sequence, and color</li>
+        </ul>
+        <li>Select the "Key" button, and choose a feature key on the page that opens</li>
+        <ul>
+          <li>You can search through available keys using the search bar</li>
+          <li>Key descriptions will appear in the text area</li>
+          <li>Keep in mind that every feature must</li>
+        </ul>
+        <li>Click "Done" when you are finished</li>
+        <li>Set the feature color and label</li>
+        <li>If you'd like, you can modify the sequence itself by selecting the sequence text area</li>
+        <li>Click the "+" button to add your feature to the sequence</li>
+        <ul>
+          <li>The new feature will only be added if it is found in your sequence</li>
+          <li>If multiple copies of the feature's sequence are found, they will all be marker be marked and annotated as one feature</li>
+          <ul>
+            <li>In the Genbank file, multiple occurances will be condenced into one feature annotation, with the positions of seperate occurrances marked by seperate position attributes joined by the "order" keyword</li>
+            <li>This is done to save space and facilitate rapid manipulation of features</li>
+          </ul>
+        </ul>
+      </ol>
+      
+      <h3>
+        Modifying an annotation
+      </h3>
+      <ol>
+        <li>Select the "Features" button</li>
+        <li>Adjust feature colors and modify labels</li>
+        <ul>
+          <li>Changes will be saved automatically</li>
+        </ul>
+      </ol>
+      
+      <br/>
+      <a name="Scanning">
+        <h2>
+          Feature scanning
+        </h2>
+      </a><p>
+      One of the most powerful features of Plasmid is the ability to scan your sequence for predefined features. Default feature lists are package with the app, but you can load your own custom lists easily.
+      </p>
+      <h3>
+        Scanning for default features
+      </h3>
+      <ol>
+        <li>Select the "ooo" button</li>
+        <li>In the menu that appears, select "Scan"</li>
+        <li>Select the default libraries you would like to use from the library menu</li>
+        <li>Select "Scan selected" to scan using selected libraries or choose "Scan all" to scan using all available libraries</li>
+        <ul>
+          <li>Depending on the number of libraries available, using "Scan all" may take some time</li>
+        </ul>
+      </ol>
+      <h3>
+        Adding custom feature lists
+      </h3>
+      <p>
+      You can easily create your own feature lists to use for scanning new sequences. Sharing feature lists with lab members is a great way to standardize your annotation schemes. An example feature list file can be found <a href="https://drive.google.com/file/d/0B4J2UdNO_j-QRHlSaER5aFFJaXM/view?usp=sharing">here</a>.
+      </p>
+      <ol>
+        <li>Using any spreadsheet editor, create a table with 3 columns</li>
+        <li>Each feature will be defined in one row</li>
+        <ul>
+          <li>Column 1 will contain the feature's label or name</li>
+          <li>Column 2 will contain the feature's key</li>
+          <ul>
+            <li>This must be a valid Genbank feature key</li>
+          </ul>
+          <li>Column 3 will contain the feature's sequence</li>
+          <ul>
+            <li>The sequence can contain only the letters "A," "T," "G," and "C"</li>
+          </ul>
+        </ul>
+        <li>Save your spreadsheet with the extension "csv"</li>
+        <li>Drag the "csv" file into the Plasmid folder in your Dropbox</li>
+      </ol>
+      
+      <br/>
+      <a name="Inspecting">
+        <h2>
+          Inspecting sequences and mapping features
+        </h2>
+      </a><p>
+      Plasmid offers the ability to quickly inspect regions of a sequence for paramaters such as melting temperature, length, and encompassed features. In addition, Plasmid can generate graphical maps of your sequence that allow for rapid visualization of features' relative positions.
+      </p>
+      <h3>
+        Inspecting sequences
+      </h3>
+      <ol>
+        <li>Select a region of the sequence using two fingers</li>
+        <li>Select the "ooo" button</li>
+        <li>Select "Inspect" or "Translate" to view information about or a translation of the selected sequence</li>
+      </ol>
+      <h3>
+        Mapping features
+      </h3>
+      <ol>
+        <li>Select "Map" to view a circular map of your sequence</li>
+        <li>Select features from the table to highlight them on the circular map</li>
+      </ol>
+    </div>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script type="text/javascript">
-      
-    </script>
+      function showInstructions()
+      {
+        main.html(instructionsHtml);
+        $('#backBtn').click(navigateBack);
+      }
+    
+    function navigateBack()
+    {
+      main.html(mainHtml);
+      $('#learnMore').click(showInstructions);
+    }
+    
+    main = $('#mainContainer');
+    mainHtml = main.html();
+    
+    instructions = $('#instructions');
+    instructionsHtml = instructions.html();
+    instructions.remove();
+    
+    $('#learnMore').click(showInstructions);
+    
+      </script>
   </body>
 </html>
