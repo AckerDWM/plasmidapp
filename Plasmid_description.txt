@@ -1,0 +1,14 @@
+Powerful DNA annotation for iOS.
+
+Experience unequalled convenience and mobility as Plasmid lets you visualize, annotate, and manage your DNA sequence files quickly and easily on your iDevice.
+
+-Need a primer? pinch a sequence and check its melting temperature and GC content.
+-Was that a 3’ or 5’ His tag? Pull up the visual map and find out.
+-Don’t feel like manually annotating your sequences? Scan for features from the built in libraries or upload your own custom libraries.
+
+Plasmid is integrated with Dropbox for seamless file transfer between your computer and mobile devices. Changes made on plasmid are automatically saved to Dropbox, and the updated files will be available anywhere you have web access. Further, with the Dropbox app you can share sequence files by text message or email, directly from your iPhone or iPad.
+
+Things you should know:
+-Detailed instructions are available at PlasmidApp.com
+-Plasmid accepts both Genbank and Fasta formatted sequence files, but outputs only the more informative Genbank files (Fasta files are converted automatically)
+-To use Plasmid, you must have a Dropbox account. The Dropbox app is not required, but it will streamline the file transfer process.
